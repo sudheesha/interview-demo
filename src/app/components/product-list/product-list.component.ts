@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ProductService } from 'src/app/services/product.service';
 import { Subscription } from 'rxjs';
 import { Product } from 'src/app/interfaces/product';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-product-list',
@@ -11,6 +12,7 @@ import { Product } from 'src/app/interfaces/product';
 export class ProductListComponent implements OnInit, OnDestroy {
   sub!: Subscription;
   products: Product[] = [];
+  name = new FormControl('James');
 
   constructor(private productService: ProductService) {}
 
@@ -27,6 +29,10 @@ export class ProductListComponent implements OnInit, OnDestroy {
       error: (err: any) => console.log(err),
     });
   }
+
+  onApply = () => {
+    this.name.setValue('Nancy');
+  };
 
   ngOnDestroy(): void {
     this.sub.unsubscribe();
