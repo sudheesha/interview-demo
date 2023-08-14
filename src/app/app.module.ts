@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { UserListComponent } from './components/user-list/user-list.component';
 import { TodoListComponent } from './components/todo-list/todo-list.component';
+import { ProductDetailsComponent } from './components/product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { TodoListComponent } from './components/todo-list/todo-list.component';
     ProductListComponent,
     UserListComponent,
     TodoListComponent,
+    ProductDetailsComponent,
   ],
   imports: [
     BrowserModule,
