@@ -9,6 +9,8 @@ import { ProductListComponent } from './components/product-list/product-list.com
 import { UserListComponent } from './components/user-list/user-list.component';
 import { TodoListComponent } from './components/todo-list/todo-list.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
+import { WelcomeComponent } from './components/welcome/welcome.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { ProductDetailsComponent } from './components/product-details/product-de
     UserListComponent,
     TodoListComponent,
     ProductDetailsComponent,
+    WelcomeComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
